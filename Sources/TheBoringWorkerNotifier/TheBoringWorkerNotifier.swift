@@ -32,17 +32,17 @@ public class TheBoringWorkerNotifier {
         print("Received mic status notification")
     })
 
-    init() {
+    public init() {
         NSLog("TheBoringWorkerNotifier init")
     }
     
-    func postNotification(name: String, userInfo: [AnyHashable: Any]?) {
+    public func postNotification(name: String, userInfo: [AnyHashable: Any]?) {
         DispatchQueue.main.async {
             self.notificationCenter.postNotificationName(.init(name), object: nil, userInfo: userInfo, deliverImmediately: true)
         }
     }
     
-    func setupObserver(notification: WorkerNotification, handler: @escaping (Notification) -> Void) {
+    public func setupObserver(notification: WorkerNotification, handler: @escaping (Notification) -> Void) {
         notificationCenter.addObserver(forName: .init(notification.name), object: nil, queue: nil, using: handler)
     }
 }

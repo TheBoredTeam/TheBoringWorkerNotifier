@@ -1,7 +1,6 @@
-
 # TheBoringWorkerNotifier 💡
 
-![TheBoringWorkerNotifier Build & Test](https://github.com/github/docs/actions/workflows/main.yml/badge.svg?event=push&branch=main)
+![TheBoringWorkerNotifier Build & Test](https://github.com/TheBoredTeam/TheBoringWorkerNotifier/actions/workflows/ci-cd.yml/badge.svg)
 
 TheBoringWorkerNotifier is a Swift library for BoringNotch and TheBoringWorkeres that provides a simple interface for managing distributed notifications in macOS applications. It allows you to easily post notifications and set up observers for various system events.
 

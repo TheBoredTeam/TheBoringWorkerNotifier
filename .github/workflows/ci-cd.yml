@@ -21,8 +21,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: macos-latest
-        xcode: ['15.0']
+        macos: ['macos-14']
+        xcode: ['15.4']
         scheme: ['TheBoringWorkerNotifier']
         command: ['test']
         platform: ['macOS']

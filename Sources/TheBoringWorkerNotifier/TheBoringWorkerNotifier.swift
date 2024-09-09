@@ -4,31 +4,31 @@
 import Foundation
 
 public struct WorkerNotification {
-    var name: String
-    var handler: (Notification) -> Void
+    public var name: String
+    public var handler: (Notification) -> Void
 }
 
 public class TheBoringWorkerNotifier {
     private let notificationCenter = DistributedNotificationCenter.default()
     
-    let toggleMicNotification: WorkerNotification = .init(name: "theboringteam.theboringworker.togglemic", handler: { _ in
+    public let toggleMicNotification: WorkerNotification = .init(name: "theboringteam.theboringworker.togglemic", handler: { _ in
         print("Received toggle mic notification")
     })
     
-    let toggleHudReplacementNotification: WorkerNotification = .init(name: "theboringteam.theboringworker.togglehudreplacement", handler: { _ in
+    public let toggleHudReplacementNotification: WorkerNotification = .init(name: "theboringteam.theboringworker.togglehudreplacement", handler: { _ in
         print("Received toggle hud replacement notification")
     })
     
-    let showClipboardNotification: WorkerNotification = .init(name: "theboringteam.theboringnotch.showclipboard", handler: { _ in
+    public let showClipboardNotification: WorkerNotification = .init(name: "theboringteam.theboringnotch.showclipboard", handler: { _ in
         
         print("Received show clipboard notification")
     })
     
-    let sneakPeakNotification: WorkerNotification = .init(name: "theboringteam.workers.sneakPeak", handler: { _ in
+    public let sneakPeakNotification: WorkerNotification = .init(name: "theboringteam.workers.sneakPeak", handler: { _ in
         print("Received sneak peak notification")
     })
     
-    let micStatusNotification: WorkerNotification = .init(name: "theboringteam.theboringworker.micstatus", handler: { _ in
+    public let micStatusNotification: WorkerNotification = .init(name: "theboringteam.theboringworker.micstatus", handler: { _ in
         print("Received mic status notification")
     })
 

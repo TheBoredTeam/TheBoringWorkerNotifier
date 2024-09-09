@@ -3,7 +3,7 @@
 
 import Foundation
 
-struct WorkerNotification {
+public struct WorkerNotification {
     var name: String
     var handler: (Notification) -> Void
 }

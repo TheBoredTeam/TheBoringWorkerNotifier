@@ -6,6 +6,11 @@ import Foundation
 public struct WorkerNotification {
     public var name: String
     public var handler: (Notification) -> Void
+
+    public init(name: String, handler: @escaping (Notification) -> Void) {
+        self.name = name
+        self.handler = handler
+    }
 }
 
 public class TheBoringWorkerNotifier {

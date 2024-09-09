@@ -8,7 +8,7 @@ struct WorkerNotification {
     var handler: (Notification) -> Void
 }
 
-class TheBoringWorkerNotifier {
+public class TheBoringWorkerNotifier {
     private let notificationCenter = DistributedNotificationCenter.default()
     
     let toggleMicNotification: WorkerNotification = .init(name: "theboringteam.theboringworker.togglemic", handler: { _ in

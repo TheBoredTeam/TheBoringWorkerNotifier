@@ -56,7 +56,7 @@ notifier.setupObserver(notification: notifier.toggleMicNotification) { notificat
 - `toggleMicNotification`
 - `toggleHudReplacementNotification`
 - `showClipboardNotification`
-- `sneakPeakNotification`
+- `sneakPeekNotification`
 - `micStatusNotification`
 
 ## Contributing

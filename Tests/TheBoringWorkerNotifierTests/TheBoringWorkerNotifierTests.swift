@@ -53,12 +53,12 @@ final class TheBoringWorkerNotifierTests: XCTestCase {
             expectation1.fulfill()
         }
         
-        notifier.setupObserver(notification: notifier.sneakPeakNotification) { _ in
+        notifier.setupObserver(notification: notifier.sneakPeekNotification) { _ in
             expectation2.fulfill()
         }
         
         notifier.postNotification(name: "theboringteam.theboringnotch.showclipboard", userInfo: nil)
-        notifier.postNotification(name: "theboringteam.workers.sneakPeak", userInfo: nil)
+        notifier.postNotification(name: "theboringteam.workers.sneakPeek", userInfo: nil)
         
         wait(for: [expectation1, expectation2], timeout: 1.0)
     }

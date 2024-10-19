@@ -29,7 +29,7 @@ public class TheBoringWorkerNotifier {
         print("Received show clipboard notification")
     })
     
-    public let sneakPeakNotification: WorkerNotification = .init(name: "theboringteam.workers.sneakPeak", handler: { _ in
+    public let sneakPeekNotification: WorkerNotification = .init(name: "theboringteam.workers.sneakPeek", handler: { _ in
         print("Received sneak peak notification")
     })
     
